@@ -211,7 +211,7 @@ export default {
         },
         initWebSocket1() {
             // 第三方包
-            this.websock = io("http://127.0.0.1:3000/", {
+            this.websock = io("http://172.18.1.72:3000/", {
                 reconnectionAttempts: 2,
             });
             this.websock.on("connect", () => {
